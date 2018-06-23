@@ -85,11 +85,11 @@ public class UserDao {
 
     }
 
-    public User findByiId(int id) throws SQLException {
+    public User findById(int id) throws SQLException {
 
         Connection connection = database.getConnection();
 
-        String sql = " SELECT id, first_name, last_name, email" +
+        String sql = "SELECT id, first_name, last_name, email " +
                 "FROM user where id=?";
         PreparedStatement statement = connection.prepareStatement(sql);
         statement.setInt(1, id);
@@ -128,4 +128,6 @@ public class UserDao {
 
 
     }
+
+
 }

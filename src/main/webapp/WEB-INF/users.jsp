@@ -25,6 +25,7 @@
     <th>Imie</th>
     <th>Nazwisko</th>
     <th>Email</th>
+    <th>Akcja</th>
 </tr>
 </thead>
 <tbody>
@@ -34,6 +35,10 @@
     <td>${user.firstName}</td>
     <td>${user.lastName}</td>
     <td>${user.email}</td>
+    <td>
+        <a href="/users/update?id=${user.id}"
+           class="btn btn-primary">Edytuj</a>
+    </td>
 </tr>
     </c:forEach>
     
