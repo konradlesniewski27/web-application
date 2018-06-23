@@ -21,7 +21,7 @@
             </div>
         </div>
         <div class="form-group">
-            <label for="nazwisko" class="col-md-2 control-label">Nazwisko1:</label>
+            <label for="nazwisko" class="col-md-2 control-label">Nazwisko2:</label>
             <div class="col-md-10">
                 <input id="nazwisko" name="nazwisko" class="form-control" value="${user.lastName}"
                        type="text" placeholder="Wpisz nazwisko" required>
